@@ -1,0 +1,19 @@
+function mensagem(){
+    alert("Bem-vindo ao Agrinho 2026 Paraná!\n\nJuntos fortalecemos a conexão entre o campo e a cidade.");
+}
+
+function contato(){
+    alert("Obrigado pela visita!\nEm breve entraremos em contato.");
+}
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        card.style.background = "#c8e6c9";
+
+        setTimeout(() => {
+            card.style.background = "white";
+        }, 600);
+    });
+});
