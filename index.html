@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho 2026</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:linear-gradient(#87CEEB,#c8f7c5);
+overflow-x:hidden;
+}
+
+header{
+background:#2E8B57;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+header h1{
+font-size:40px;
+}
+
+.nuvem{
+position:absolute;
+width:150px;
+animation:nuvem 20s linear infinite;
+opacity:0.8;
+}
+
+.nuvem:nth-child(1){
+top:30px;
+}
+
+.nuvem:nth-child(2){
+top:90px;
+animation-duration:30s;
+}
+
+@keyframes nuvem{
+from{
+left:-200px;
+}
+to{
+left:110%;
+}
+}
+
+section{
+padding:40px;
+text-align:center;
+}
+
+.galeria{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.galeria img{
+width:300px;
+border-radius:20px;
+transition:0.5s;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+.galeria img:hover{
+transform:scale(1.1) rotate(2deg);
+}
+
+.balanca{
+animation:balancar 3s infinite ease-in-out;
+}
+
+@keyframes balancar{
+0%{transform:rotate(0deg);}
+25%{transform:rotate(2deg);}
+50%{transform:rotate(-2deg);}
+75%{transform:rotate(2deg);}
+100%{transform:rotate(0deg);}
+}
+
+button{
+margin-top:30px;
+padding:15px 30px;
+font-size:20px;
+background:#228B22;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:.4s;
+}
+
+button:hover{
+background:#32CD32;
+transform:scale(1.1);
+}
+
+footer{
+background:#2E8B57;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" class="nuvem">
+<img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" class="nuvem">
+
+<header>
+<h1>AGRINHO 2026</h1>
+<h2>Festejando a conexão entre o campo e a cidade</h2>
+</header>
+
+<section>
+
+<h2>Conheça essa conexão!</h2>
+
+<br><br>
+
+<div class="galeria">
+
+<img src="campo.jpg" class="balanca">
+
+<img src="cidade.jpg">
+
+<img src="agricultura.jpg">
+
+</div>
+
+<p style="margin-top:30px;font-size:20px;">
+O campo produz alimentos, preserva a natureza e abastece a cidade. Juntos, construímos um futuro sustentável!
+</p>
+
+<button onclick="mostrarMensagem()">
+Clique Aqui
+</button>
+
+</section>
+
+<footer>
+Desenvolvido para o Concurso Agrinho 2026 🌱
+</footer>
+
+<script>
+function mostrarMensagem(){
+alert("O futuro depende da união entre o campo e a cidade! 🌱");
+}
+</script>
+
+</body>
+</html>
